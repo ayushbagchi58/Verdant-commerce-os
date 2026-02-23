@@ -1,0 +1,22 @@
+import axios from "axios";
+
+const axiosInstance = axios.create({
+  baseURL:  import.meta.env.VITE_API_BASE_URL as string,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+
+axiosInstance.interceptors.response.use(
+  (response) => {
+    console.log("Response success", response);
+    return response;
+  },
+  (error) => {
+    console.log("Global error", error);
+    return Promise.reject(error);
+  }
+);
+
+export default axiosInstance
