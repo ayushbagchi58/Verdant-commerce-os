@@ -73,8 +73,8 @@ This project evaluates the following skills:
 ## Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/verdant-commerce-os.git
-cd verdant-commerce-os
+git clone https://github.com/ayushbagchi58/Verdant-commerce-os.git
+cd Verdant-commerce-os
 npm install
 npm run dev
 ```
